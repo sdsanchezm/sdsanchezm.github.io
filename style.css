@@ -1,0 +1,347 @@
+/*
+Css created by Sergio Sanchez, github user: sdsanchezm
+Lic: completely free to copy, modify, etc
+*/
+:root {
+    --first-color: #000000;
+    --second-color: #14213d;
+    --third-color: #fca311;
+    --fourth-color: #E5e5e5;
+    --fifth-color: #ffffff;
+    --sixth-color: red;
+    --fontSize: 1.8rem;
+    --fontFamily: 'Roboto Condensed', sans-serif;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: var(--fourth-color);
+}
+
+.h1-container {
+    font-size: 4rem;
+    color: var(--second-color);
+}
+
+li, .a_nav, .cta {
+    font-family: 'Roboto Condensed', sans-serif;
+    /* font-weight: 500; */
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--fifth-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: var(--second-color);
+    color: var(--fifth-color);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: red;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: var(--third-color);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: var(--fourth-color);
+    color: var(--first-color);
+}
+
+.logo {
+    cursor: pointer;
+}
+
+main {
+    width: 100vw;
+    height: 70vh;
+    font-size: var(--fontSize);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 5vh;
+    background-color: var(--second-color);
+}
+
+.footer1 {
+    text-align: center;
+    font-family: var(--fontFamily);
+    color: var(--fifth-color);
+    font-size: var(--fontSize);
+
+}
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap'); */
+
+.c1, .c2, .c3, .c4, .c5, .c6 {
+    height: 300px;
+    width: 200px;
+    border-color: none;
+    border-style: none;
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    margin: auto;
+}
+
+.c1 {
+    background-color: var(--first-color);
+}
+
+.c2 {
+    background-color: var(--second-color);
+}
+
+.c3 {
+    background-color: var(--third-color);
+}
+
+.c4 {
+    background-color: var(--fourth-color);
+}
+
+.c5 {
+    background-color: var(--fifth-color);
+}
+
+.c6 {
+    background-color: var(--first-color);
+}
+
+
+/* @media (min-width: 600px) {
+    .c2, .c3, .c4 {
+        width: 50%;
+    }
+} */
+
+/* @media (min-width: 800px){
+    .container {
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .c1 {
+        width: 60%;
+    }
+    .c2 {
+        width: 40%;
+    }
+    .c3, .c4 {
+        width: 33%;
+    }
+    .c5 {
+        width: 34%
+    }
+} */
+
+/* ************************************************************ */
+/* this is the card TYPE 1 configuration  */
+
+.card-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background: url("img2.jpg");
+    overflow: hidden;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "image" "text" "stats";
+    font-family: var(--fontFamily);
+    border-radius: 18px;
+    background: var(--fourth-color);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.card-img {
+    grid-area: image;
+    background: url("img1.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+.card-text {
+    grid-area: text;
+    margin: 25px;
+}
+
+.card-text .date {
+    color: var(--third-color);
+    font-size: var(--fontSize);
+}
+
+.card-text p {
+    color: var(--first-color);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.card-text h2 {
+    margin-top: 0px;
+    font-size: 28px;
+}
+
+.card-stats {
+    grid-area: stats;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: var(--third-color);
+}
+
+.card-stats .stat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    color: var(--fifth-color);
+}
+
+.card-stats .type {
+    font-size: 11px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.card-stats .value {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.card-stats .border {
+    border-left: 1px solid var(--second-color);
+    border-right: 1px solid var(--second-color);
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: #fca311;
+}
+
+
+/* *****************************************************8 */
+/* this is the card TYPE 2 configuration  */
+
+.container2{
+    background: var(--fourth-color);
+    font-family: var(--fontFamily);
+    font-size: 10px;
+}
+
+.row2 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card2 {
+    width: 250px;
+    background: var(--fifth-color);
+    border: 2px solid var(--first-color);
+    margin-bottom: 50px;
+    transition: 0.3s;
+    margin-top: 50px;
+}
+
+.card2-header {
+    text-align: center;
+    padding: 50px 10px;
+    background: linear-gradient(to right, var(--first-color), var(--second-color));
+    /* color: var(--fifth-color); */
+    color: green;
+}
+
+.card2-body {
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.card2-body .btn {
+    display: block;
+    color: green;
+    text-align: center;
+    background: linear-gradient(to right, var(--second-color), var(--first-color));
+    margin-top: 30px;
+    text-decoration: none;
+    padding: 10px 5px;
+}
+
+.card2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px){
+    .card {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .container {
+        width: 100%;
+    }
+    .heading{
+        
+    }
+    .card {
+        width: 40%;
+    }
+}
