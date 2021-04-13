@@ -184,7 +184,7 @@ footer {
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    background: url("img2.jpg");
+    background: url("./img/img2.jpg");
     overflow: hidden;
 }
 
@@ -200,11 +200,12 @@ footer {
     text-align: center;
     transition: 0.5s ease;
     cursor: pointer;
+    flex-wrap: wrap;
 }
 
 .card-img {
     grid-area: image;
-    background: url("img1.jpg");
+    background: url("./img/img1.jpg");
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-size: cover;
