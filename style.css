@@ -12,7 +12,7 @@ Lic: completely free to copy, modify, etc
     --fontSize: 1.8rem;
     --fontFamily: 'Roboto Condensed', sans-serif;
 }
-* {
+* {dat
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -302,22 +302,30 @@ footer {
 .card2-header {
     text-align: center;
     padding: 50px 10px;
-    background: linear-gradient(to right, var(--first-color), var(--second-color));
+    /* background: linear-gradient(to right, var(--first-color), var(--second-color)); */
+    background: url("./img/img7.jpg");
     /* color: var(--fifth-color); */
-    color: green;
+    color: whitesmoke;
 }
 
 .card2-body {
     padding: 30px 20px;
-    text-align: center;
+    text-align: left;
+    font-size: 12px;
+}
+
+.card2-body li {
+    color: var(--second-color);
+    text-align: left;
     font-size: 12px;
 }
 
 .card2-body .btn {
     display: block;
-    color: green;
+    color: white;
     text-align: center;
-    background: linear-gradient(to right, var(--second-color), var(--first-color));
+    /* background: linear-gradient(to right, var(--second-color), var(--first-color)); */
+    background: url("./img/img7.jpg");
     margin-top: 30px;
     text-decoration: none;
     padding: 10px 5px;
@@ -325,8 +333,7 @@ footer {
 
 .card2:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
+    box-shadow: 0 0 40px -10px;
 }
 
 @media screen and (max-width: 1000px){
