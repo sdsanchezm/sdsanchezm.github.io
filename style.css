@@ -293,7 +293,7 @@ footer {
 .card2 {
     width: 250px;
     background: var(--fifth-color);
-    border: 2px solid var(--first-color);
+    border: 2px solid var(--first-color);.
     margin-bottom: 50px;
     transition: 0.3s;
     margin-top: 50px;
@@ -303,7 +303,7 @@ footer {
     text-align: center;
     padding: 50px 10px;
     /* background: linear-gradient(to right, var(--first-color), var(--second-color)); */
-    background: url("./img/img7.jpg");
+    background: url("./img/img7_2.jpg");
     /* color: var(--fifth-color); */
     color: whitesmoke;
 }
@@ -325,7 +325,7 @@ footer {
     color: white;
     text-align: center;
     /* background: linear-gradient(to right, var(--second-color), var(--first-color)); */
-    background: url("./img/img7.jpg");
+    background: url("./img/img7_2.jpg");
     margin-top: 30px;
     text-decoration: none;
     padding: 10px 5px;
@@ -335,6 +335,45 @@ footer {
     transform: scale(1.05);
     box-shadow: 0 0 40px -10px;
 }
+
+/* ============ code of the list =================== */ 
+
+.list1 {
+    margin: 20px;
+    background: var(--third-color);
+    font-family: var(--fontFamily);
+    font-size: 12px;
+}
+
+.list1 a {
+    text-align: center;
+    padding: 100px 400px;
+    background: linear-gradient(to right, var(--first-color), var(--second-color));
+    /* background: url("./img/img7_2.jpg"); */
+    /* color: var(--fifth-color); */
+    color: red;
+}
+
+.list1 ul {
+    list-style-type: none;
+    width: 500px;
+  }
+   
+.list1 h3 {
+    font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+  }
+
+.list1 li {
+    float: left;
+    margin: 0 15px 0 0;
+  }
+   
+   
+.list1 li {
+    padding: 10px;
+    overflow: auto;
+  }
+
 
 @media screen and (max-width: 1000px){
     .card {

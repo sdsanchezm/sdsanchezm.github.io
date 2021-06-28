@@ -1,5 +1,6 @@
 var up = document.getElementById('kk1'); 
-var down = document.getElementById('kk2'); 
+var down = document.getElementById('kk2');
+var getQuote = document.getElementById('kk3');
   
 var array1 = ["text 1", "text 2", "text 3", "text 4"];
 
@@ -33,8 +34,11 @@ var array2 = ["Si quieres vivir Feliz trágate tu dolor.   -ProverbioAlemán.",
 up.innerHTML = "Click on the button to check the daily quote: " + " " ;
   
 function random_text1() {
-    down.innerHTML = 
+    getQuote.innerHTML = 
         array2[Math.floor(Math.random() * array2.length)];
 }
+
+
+
 
 
