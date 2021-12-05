@@ -45,7 +45,7 @@
 
     
     <!-- Custom styles for this template -->
-    <link href="./sidebars.css" rel="stylesheet">
+    <link href="./all.css" rel="stylesheet">
   </head>
   <body>
 
@@ -106,6 +106,9 @@
         <symbol id="geo-fill" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
         </symbol>
+        <symbol id="ss-arrow">
+          <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
+        </symbol>
       </svg>
 
 
@@ -113,7 +116,8 @@
 
 <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
     <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      <!-- <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg> -->
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#chevron-right"></use></svg>
       <span class="fs-4">Main-Menu</span>
     </a>
     <hr>
@@ -171,30 +175,71 @@
 
   <div class="b-example-divider"></div>
 
-  <div class="">
+<div class="container-lg">
+
     <button type="button" class="btn btn-primary">
         <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
         Web page developed using Bootstrap 5
     </button>
-    <hr>
-    <button type="button" class="btn btn-primary" onclick = "random_text1()">Get a Quote</button>
-    <p id="kk3"></p>
-    <hr>
+
+<hr>
     <a href="https://github.com/sdsanchezm" class="nav-link text-blue">
         <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
         Github Repo 
       </a>
-</div>
 
+
+    <!-- <div class="mb-5">
+      <a href="/docs/5.1/examples/" class="btn btn-primary btn-lg px-4">Download examples</a>
+    </div> -->
+
+    <hr class="col-3 col-md-2 mb-5">
+
+    <div class="row g-5">
+      <div class="col-md-6">
+        <h2>Repositories</h2>
+        <p>Ready to apply/learn/use, even more.</p>
+        <ul class="icon-list">
+          <li><a href="https://github.com/twbs/bootstrap-npm-starter" rel="noopener" target="_blank">Bootstrap npm starter Tempalte</a></li>
+          <li class="text-muted">Bootstrap 5 - Examples (not avail yet).</li>
+          <li><a href="https://github.com/sdsanchezm/javascript-all" rel="" target="_blank">Javascript</a></li>
+          <li><a href="https://github.com/sdsanchezm/SQL-all" rel="" target="_blank">SQL</a></li>
+          <li><a href="https://github.com/sdsanchezm/api-ef-csharp" rel="" target="_blank">CSharp</a></li>
+          <li><a href="https://github.com/sdsanchezm/kommandozeile-all" rel="" target="_blank">kommandozeile</a></li>
+          <li><a href="https://github.com/sdsanchezm/react-all" rel="" target="_blank">React</a></li>
+          <li><a href="https://github.com/sdsanchezm/docker-all1" rel="" target="_blank">Docker</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-6">
+        <h2>More Guides</h2>
+        <p>Read more instructions about this template.</p>
+        <ul class="icon-list">
+          <li>
+            <a href="/docs/5.1/getting-started/introduction/">Bootstrap quick start guide</a>
+          </li>
+          <li><a href="/docs/5.1/getting-started/webpack/">Bootstrap Webpack guide</a></li>
+          <li><a href="/docs/5.1/getting-started/parcel/">Bootstrap Parcel guide</a></li>
+          <li><a href="/docs/5.1/getting-started/contribute/">Contributing to Bootstrap</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr>
+    <button type="button" class="btn btn-primary" onclick = "random_text1()">Get a Quote</button>
+    <div id="kk3" class="alert alert-primary" role="alert"></div>
+    <hr>
+
+</div>
 
 </main>
 
 
 <footer>
-    <div class="footer">
-        <p>
+    <div class="d-grid gap-2 block">
+        <button class="btn btn-primary">
           &rightarrow; sdsanchezm - 2021 &leftarrow; 
-        </p>
+        </button>
     </div>
 </footer>
 
