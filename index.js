@@ -35,6 +35,10 @@ repolist1 = [
         "name": "kommandozeile-all",
         "link": "https://github.com/sdsanchezm/kommandozeile-all"
     },
+	{
+		"name": "react-all",
+		"link": "https://github.com/sdsanchezm/react-all"
+	},
     {
         "name": "sql-all",
         "link": "https://github.com/sdsanchezm/SQL-all"
