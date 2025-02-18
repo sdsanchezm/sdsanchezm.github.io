@@ -89,11 +89,13 @@
 body {
     /* margin: 0; */
     /* padding: 0; */
-    background-color: #18191D;
+    /* background-color: #18191D; */
+    background-color:white;
 }
 
 .card span {
     color: #3A8D3C;
+    /* color: red; */
 }
 
 .card {
